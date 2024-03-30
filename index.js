@@ -13,7 +13,7 @@ function getAge() {
         else
         {
             let lastDigit = year % 10; // остання цифра
-            let lastTwoDigits = year % 100; // останні дві цифри
+            let lastTwoDigits = year % 100; // останні дві цифри в числі
             if (lastDigit === 1 && lastTwoDigits !== 11) { // якщо остання цифра завершується на 1, а передостанні не = 11 то виводимо рік. Наприклад: 1 -> 1 рік
                 console.log(year + " рік");
             } else if (lastDigit >= 2 && lastDigit <= 4 && (lastTwoDigits < 10 || lastTwoDigits >= 20)) { //якщо остання цифра в діапазоні від 2 до 4, та дві останні в діапазоні від 10 до 20, то виводимо роки. Наприклад: 2 -> 2 роки
