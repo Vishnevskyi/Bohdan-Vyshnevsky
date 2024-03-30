@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const prompt = require('prompt');
 
 prompt.start();
@@ -25,3 +26,5 @@ function getAge() {
     })
 }
 getAge()
+=======
+>>>>>>> eadcb73a48d35c24e52888dab1f925f6706571a9
