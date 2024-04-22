@@ -7,6 +7,14 @@ window.fineList = {
 let DB = data.finesData;
 
 function searchFines(searchKey){
+    let result;
+    DB.forEach(element => {
+        if (element['номер'] === searchKey || element['тип'] === searchKey)
+        {
+            result = element
+        }
+    });
+    return [result]
     /*
      Напишіть свій код тут!
      Як ви бачите функція повертає статичні дані.
@@ -18,10 +26,5 @@ function searchFines(searchKey){
      - Невірне паркування
      - Їзда у не тверезому стані
      */
-
-
-    return [
-        {номер: '001', тип: 'Перевищення швидкості', сума: 100, дата: '2023-01-15'}
-    ];
 }
 
