@@ -34,7 +34,7 @@ alert "Номер не співпадає" або "Сума не співпад�
  buttonSubmit.addEventListener('click', payFine);
 
 function payFine() {
-    // Получаем значения полей
+    // значення полів
     let fineNumberValue = fineNumber.value;
     let passportValue = passport.value;
     let creditCardNumberValue = creditCardNumber.value;
@@ -72,6 +72,6 @@ function payFine() {
         }
     }
 
-    // Если ни один штраф не соответствует введенным данным
+    // якщо штраф не знайдено
     alert("Штраф не знайдено.");
 }
